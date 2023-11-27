@@ -18,6 +18,7 @@ import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import { FeatureInsightCardComponent } from './feature-insight-card/feature-insight-card.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {MatButtonModule} from "@angular/material/button";
         HeaderComponent,
         FooterComponent,
         LoginComponent,
+        FeatureInsightCardComponent,
 
     ],
   imports: [
