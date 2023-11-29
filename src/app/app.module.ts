@@ -29,7 +29,6 @@ import { FeatureInsightCardComponent } from './feature-insight-card/feature-insi
         FooterComponent,
         LoginComponent,
         FeatureInsightCardComponent,
-
     ],
   imports: [
     BrowserModule,

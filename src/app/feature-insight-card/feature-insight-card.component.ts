@@ -15,20 +15,24 @@ export class FeatureInsightCardComponent implements OnInit{
   constructor() {
   }
   ngOnInit() {
+
+
+
+    // @ts-ignore
     var myChart = new Chart("myChart", {
-      type: 'bar',
+      type: 'doughnut',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['grocery', 'restaurants', 'fixed expenses', 'savings', 'not categorized', 'other'],
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: "Expenses",
+          data: [100, 190, 250, 1500, 200, 300],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
           ],
           borderColor: [
             'rgba(255, 99, 132, 1)',
@@ -38,13 +42,49 @@ export class FeatureInsightCardComponent implements OnInit{
             'rgba(153, 102, 255, 1)',
             'rgba(255, 159, 64, 1)'
           ],
-          borderWidth: 1
+          borderWidth: 1,
         }]
       },
-      options: {
+      options:{
+        elements:{
+          arc:{
+            hoverOffset:45
+          },
+          line:{
+            tension:0
+          }
+        },
+        responsive: true,
+        aspectRatio: 1|1,
         scales: {
           y: {
-            beginAtZero: true
+            display: false,
+            beginAtZero: true,
+            ticks:{
+              display: false
+            },
+            grid:{
+              display:false
+            },
+          },
+          x: {
+            display: false,
+            beginAtZero: true,
+            ticks:{
+              display: false
+            },
+            grid:{
+              display:false
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: 'Expenses'
           }
         }
       }

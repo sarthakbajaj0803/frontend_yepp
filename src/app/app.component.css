@@ -6,7 +6,7 @@ mat-toolbar{
   color: white;
 }
 
-.content {
+.content .webpage{
   height:100%;
   width:100%;
 }
