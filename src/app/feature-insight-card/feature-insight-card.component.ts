@@ -55,7 +55,6 @@ export class FeatureInsightCardComponent implements OnInit{
           }
         },
         responsive: true,
-        aspectRatio: 1|1,
         scales: {
           y: {
             display: false,
@@ -91,6 +90,7 @@ export class FeatureInsightCardComponent implements OnInit{
     });
 
   }
+
 
 
 }

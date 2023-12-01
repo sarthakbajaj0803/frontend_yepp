@@ -1,11 +1,37 @@
-h1 {
-  color: black;
-  z-index: 200;
+
+
+.accountoverview{
+  display: flex;
+  flex-flow: column;
+  height:100vh;
+}
+
+.page{
+  margin-top:8vh;
+  width: 100%;
+}
+.page-heading{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-inline:20px;
+  padding-bottom: 0;
+  margin-block: 0;
 }
 
 
+
+.welcome{
+  font-family: heading-font;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-inline:20px;
+  padding-bottom: 0;
+  margin-block: 0;
+
+}
 mat-card{
-  margin: 20px;
+  margin-inline: 20px;
   padding: 20px;
   background-color: #f5f4f4;
   border-radius: 10px;
@@ -44,7 +70,6 @@ h1{
 .transfer:hover{
   transform: scale3d(1.01, 1.08, 1);
 }
-
 
 
 

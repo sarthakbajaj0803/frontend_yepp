@@ -1,17 +1,23 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {interval} from "rxjs";
+import {BreakpointObserver} from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-account-information',
   templateUrl: './account-information.component.html',
   styleUrls: ['./account-information.component.css']
 })
-export class AccountInformationComponent {
+export class AccountInformationComponent implements OnInit{
+  isMobileLayout = false;
+  constructor(private breakpointObserver: BreakpointObserver) {
+  }
 
-constructor() {
-  console.log(interval(1000));
-}
-
+  ngOnInit() {
+    this.breakpointObserver.observe(['(max-width: 599px)']).subscribe(result => {
+      this.isMobileLayout = result.matches;
+      console.log(this.isMobileLayout)
+    });
+  }
 
 
 }

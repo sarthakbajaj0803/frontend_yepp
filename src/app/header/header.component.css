@@ -1,25 +1,22 @@
 
-container.is-mobile-layout {
+container.is-mobile-layout .menu-item {
   display: none;
 }
-.menu{
-    display: flex;
-    flex-flow: row;
-    height: 100%;
-    align-items: baseline;
-    padding-inline: 10px;
-}
+
 .heading{
     padding-inline:15px;
     font-size: larger;
     font-weight: bold;
     margin:auto;
+
 }
 .header {
+    position: fixed;
     display: inline-flex;
     flex-flow: row;
-    height: 100%;
     width: 100%;
+    height: 6vh;
+    gap:8px;
     align-items: baseline;
     border-bottom-style: solid;
     border-bottom-width: thin;
@@ -40,15 +37,30 @@ container.is-mobile-layout {
 
 
 .menu-item{
-    padding:20px;
     height: 100%;
+;
 }
 .menu-item:hover{
     border-bottom-style: solid;
     border-bottom-width: thin;
-    border-bottom-color: gray;
+    border-bottom-color: black;
 }
 
 
 
+@media only screen and (max-width: 600px) {
+  .header {
+    display: inline-flex;
+    flex-flow: row;
+    width: 100%;
+    height: 6vh;
+    gap:5px;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgray;
+    box-shadow: lightgray;
+    background-color: white;
+  }
+}
 
