@@ -12,7 +12,7 @@
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/cdk": "16.2.11",
-    "@angular/common": "^16.2.0",
+    "@angular/common": "^16.2.3",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
     "@angular/forms": "^16.2.0",
@@ -22,6 +22,7 @@
     "@angular/router": "^16.2.0",
     "@sfc/components": "^11.2.0",
     "@sfc/style": "^11.2.0",
+    "angular-dark-mode": "^3.1.0",
     "chart.js": "^4.4.0",
     "devextreme": "^23.1.6",
     "devextreme-angular": "^23.1.6",

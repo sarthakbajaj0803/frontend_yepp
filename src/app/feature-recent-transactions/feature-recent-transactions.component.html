@@ -1,0 +1,38 @@
+<div class="card">
+  <div *ngFor="let transaction of transactions" class="listitem" >
+
+    <sfc-item fixed-label-end
+              icon-start="rds-icon-basket"
+              tabindex="1"
+              link="/home" class="main">
+      <span slot ="label">{{transaction.name}}</span>
+      <span
+        slot="label-end"
+        class="sfc-money-transaction sfc-money-transaction--negative"
+        *ngIf="transaction.debit; else credit"
+      >
+              <sfc-output-money
+                amount="{{transaction.amount}}"
+                currency="EUR"
+                decimals="2"
+              ></sfc-output-money>
+            </span>
+
+      <ng-template #credit><span
+        slot="label-end"
+        class="sfc-money-transaction sfc-money-transaction--positive"
+
+      >
+              <sfc-output-money
+                amount="{{transaction.amount}}"
+                currency="EUR"
+                decimals="2"
+              ></sfc-output-money>
+            </span></ng-template>
+      <sfc-output-bank-account
+        slot="description"
+        product="{{transaction.reference}}"
+      ></sfc-output-bank-account>
+    </sfc-item>
+  </div>
+</div>

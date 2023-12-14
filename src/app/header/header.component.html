@@ -14,4 +14,9 @@
         <p> Insight</p>
       </a>
         </div>
+    <div>
+      <mat-slide-toggle class="toggle" [checked]="darkmode$ | async" (change)="toggleDarkMode()">
+        Dark Theme
+      </mat-slide-toggle>
+    </div>
   </div>

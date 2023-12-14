@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import {interval} from "rxjs";
 import {BreakpointObserver} from "@angular/cdk/layout";
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-account-information',

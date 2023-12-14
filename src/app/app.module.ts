@@ -1,7 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatToolbarModule} from "@angular/material/toolbar";
@@ -19,6 +18,9 @@ import {FormsModule} from "@angular/forms";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { FeatureInsightCardComponent } from './feature-insight-card/feature-insight-card.component';
+import { FeatureDebitCardComponent } from './feature-debit-card/feature-debit-card.component';
+import { FeatureRecentTransactionsComponent } from './feature-recent-transactions/feature-recent-transactions.component';
+import { FeatureTransferComponent } from './feature-transfer/feature-transfer.component';
 
 
 @NgModule({
@@ -29,6 +31,9 @@ import { FeatureInsightCardComponent } from './feature-insight-card/feature-insi
         FooterComponent,
         LoginComponent,
         FeatureInsightCardComponent,
+        FeatureDebitCardComponent,
+        FeatureRecentTransactionsComponent,
+        FeatureTransferComponent,
     ],
   imports: [
     BrowserModule,
@@ -39,12 +44,11 @@ import { FeatureInsightCardComponent } from './feature-insight-card/feature-insi
     MatListModule,
     RouterLink,
     RouterOutlet,
-    CommonModule,
     MatInputModule,
     FormsModule,
     MatIconModule,
-    MatButtonModule
-
+    MatButtonModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [],

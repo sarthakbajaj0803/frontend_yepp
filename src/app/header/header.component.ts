@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {BreakpointObserver} from "@angular/cdk/layout";
+import {DarkModeService} from "angular-dark-mode";
 
 
 @Component({
@@ -9,7 +10,7 @@ import {BreakpointObserver} from "@angular/cdk/layout";
 })
 export class HeaderComponent implements OnInit {
   isMobileLayout = false;
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private darkModeService: DarkModeService) {
   }
   ngOnInit() {
   this.breakpointObserver.observe(['(max-width: 599px)']).subscribe(result => {
@@ -17,6 +18,12 @@ export class HeaderComponent implements OnInit {
     console.log(this.isMobileLayout)
   });
   }
+  darkmode$ = this.darkModeService.darkMode$;
+
+  toggleDarkMode() {
+    this.darkModeService.toggle();
+  }
+
 
 
 

@@ -12,6 +12,7 @@ container.is-mobile-layout .menu-item {
 }
 .header {
     position: fixed;
+    z-index: 1;
     display: inline-flex;
     flex-flow: row;
     width: 100%;

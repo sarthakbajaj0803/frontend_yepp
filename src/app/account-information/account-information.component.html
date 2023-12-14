@@ -5,15 +5,16 @@
   <div class="page">
     <p class ="page-heading">Account Overview</p>
     <p class="welcome"> Welcome back Sarthak!</p>
-    <mat-card>
-      <a [routerLink]="['/transactions']" style="text-decoration: none; color:black;">
-      <mat-card-title>Savings Account</mat-card-title>
-      <mat-card-subtitle>Account Number: 123456789</mat-card-subtitle>
-      <mat-card-content> <p>1000€</p></mat-card-content>
-      </a>
-    </mat-card>
-
-    <app-feature-insight-card></app-feature-insight-card>
+    <div class="card" [routerLink]="['/transactions' ]">
+      <p class="title">Savings Account</p>
+      <p class ="account-number">Account Number: 123456789</p>
+      <p class="balance">1000€</p>
+    </div>
+    <div class="widget-manager">
+      <app-feature-insight-card></app-feature-insight-card>
+      <app-feature-recent-transactions></app-feature-recent-transactions>
+      <app-feature-debit-card></app-feature-debit-card>
+    </div>
   </div>
   <app-footer></app-footer>
 </div>

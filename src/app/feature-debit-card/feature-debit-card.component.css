@@ -1,0 +1,113 @@
+.card , .backcard{
+  width:20vw;
+  height: 20vh;
+  position: absolute;
+  background-color: orangered;
+  z-index: auto;
+  border-radius: 1vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: center;
+  padding:2px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.flip{
+  width:20vw;
+  height: 20vh;
+  position: relative;
+  transition: all 1s cubic-bezier(.55,-.62,.27,1.2);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1s cubic-bezier(.55,-.62,.27,1.2); ;
+
+}
+.flip:hover{
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+.backcard{
+  transform: rotateX(180deg);
+}
+.heading{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: blue;
+  font-family:Monaco, "Lucida Console", monospace;
+  text-align: center;
+}
+.card-number{
+  position: relative;
+  margin:auto;
+  font-size: 1.3vw;
+}
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5vw;
+  font-size: 1vw;
+}
+
+.divChart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: white;
+
+}
+.card:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.chip{
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    width: 80vw;
+    height: 20vh;
+    border-radius: 1vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding:2px;
+  }
+  .card-number{
+    margin:auto;
+    font-size: 6vw;
+  }
+  .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5vw;
+    font-size: 6vw;
+  }
+  .divChart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:2vw;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: white;
+  }
+  .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transform: scale3d(1.01, 1.05, 1);
+  }
+}

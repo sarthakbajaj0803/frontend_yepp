@@ -1,10 +1,10 @@
 
-
 .accountoverview{
   display: flex;
   flex-flow: column;
   height:100vh;
 }
+
 
 .page{
   margin-top:8vh;
@@ -19,7 +19,29 @@
   margin-block: 0;
 }
 
+.widget-manager {
+  display: flex;
+  flex-flow: row wrap ;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-right: 20px;
+  margin-top: 2vh;
+}
 
+app-feature-insight-card{
+  flex-grow: 1;
+}
+
+app-feature-debit-card{
+  flex-grow: 1;
+  margin-right:20px;
+}
+
+app-feature-recent-transactions{
+  flex-grow: 1;
+  margin-left:20px;
+}
 
 .welcome{
   font-family: heading-font;
@@ -30,10 +52,25 @@
   margin-block: 0;
 
 }
-mat-card{
+.card.dark-mode{
+  background-color: #1a1a1a;
+  color: wheat;
+}
+
+.card.light-mode{
+  background-color: white;
+  color: black;
+}
+
+title.light-mode{
+  color: black;
+}
+.title.dark-mode{
+  color: wheat;
+}
+.card{
   margin-inline: 20px;
   padding: 20px;
-  background-color: #f5f4f4;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   background-image:
@@ -50,7 +87,7 @@ mat-card{
     background-position: 1600px 130%, 3150px 130%, 5300px 130%;
   }
 }
-mat-card:hover {
+.card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   transform: scale3d(1.01, 1.05, 1);
 }
