@@ -14,13 +14,16 @@ import { FooterComponent } from './footer/footer.component';
 import {CommonModule} from "@angular/common";
 import { LoginComponent } from './login/login.component';
 import {MatInputModule} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { FeatureInsightCardComponent } from './feature-insight-card/feature-insight-card.component';
 import { FeatureDebitCardComponent } from './feature-debit-card/feature-debit-card.component';
 import { FeatureRecentTransactionsComponent } from './feature-recent-transactions/feature-recent-transactions.component';
 import { FeatureTransferComponent } from './feature-transfer/feature-transfer.component';
+import { InsightPageComponent } from './insight-page/insight-page.component';
+import { FeatureCo2InsightsCardComponent } from './feature-co2-insights-card/feature-co2-insights-card.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import { FeatureTransferComponent } from './feature-transfer/feature-transfer.co
         FeatureDebitCardComponent,
         FeatureRecentTransactionsComponent,
         FeatureTransferComponent,
+        InsightPageComponent,
+        FeatureCo2InsightsCardComponent,
+        TransactionComponent,
     ],
   imports: [
     BrowserModule,
@@ -49,6 +55,8 @@ import { FeatureTransferComponent } from './feature-transfer/feature-transfer.co
     MatIconModule,
     MatButtonModule,
     CommonModule,
+      ReactiveFormsModule,
+      FormsModule
   ],
   providers: [],
   bootstrap: [],

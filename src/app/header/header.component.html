@@ -1,16 +1,16 @@
-  <div class="header" >
+  <div class="header">
     <div>
-      <a [routerLink]="['/home']" style="text-decoration: none; color:black;">
+      <a [routerLink]="['/home']" >
         <div class="heading">Banking App</div>
       </a>
     </div>
     <div class ="menu-item" *ngIf="!isMobileLayout" >
-      <a [routerLink]="['/transactions']" style="text-decoration: none; color:black;">
+      <a [routerLink]="['/transactions']" >
         <p>Transactions</p>
       </a>
       </div>
       <div class="menu-item"  *ngIf="!isMobileLayout" >
-      <a [routerLink]="['/transactions']" style="text-decoration: none; color:black;">
+      <a [routerLink]="['/insights']">
         <p> Insight</p>
       </a>
         </div>

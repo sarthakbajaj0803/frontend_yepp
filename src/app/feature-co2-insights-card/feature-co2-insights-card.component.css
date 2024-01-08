@@ -1,0 +1,27 @@
+.chart{
+  width:100%;
+  height:100%;
+}
+.chart-wrapper{
+  width:100%;
+}
+
+.divChart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  .light-mode{
+    background-color: white;
+    color: black;
+  }
+  .dark-mode{
+    background-color: black;
+    color: wheat;
+  }
+
+}

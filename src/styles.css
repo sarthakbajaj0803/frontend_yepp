@@ -16,6 +16,10 @@ body.dark-mode{
   color: wheat;
 }
 
+body.dark-mode .divChart {
+  background-color: #5c5cce;
+}
+
 
 
 @font-face {

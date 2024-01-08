@@ -19,7 +19,7 @@ export class FeatureInsightCardComponent implements OnInit{
 
 
     // @ts-ignore
-    var myChart = new Chart("myChart", {
+    myChart = new Chart("myChart", {
       type: 'doughnut',
       data: {
         labels: ['grocery', 'restaurants', 'fixed expenses', 'savings', 'not categorized', 'other'],
@@ -46,6 +46,7 @@ export class FeatureInsightCardComponent implements OnInit{
         }]
       },
       options:{
+        maintainAspectRatio: false,
         elements:{
           arc:{
             hoverOffset:45

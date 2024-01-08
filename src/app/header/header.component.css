@@ -2,17 +2,24 @@
 container.is-mobile-layout .menu-item {
   display: none;
 }
+a {
+  text-decoration: none;
+  color:black ;
+}
 
 .heading{
     padding-inline:15px;
     font-size: larger;
     font-weight: bold;
     margin:auto;
+  .dark-mode{
+    color: wheat;
+  }
 
 }
 .header {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     display: inline-flex;
     flex-flow: row;
     width: 100%;
@@ -23,7 +30,14 @@ container.is-mobile-layout .menu-item {
     border-bottom-width: thin;
     border-bottom-color: lightgray;
     box-shadow: lightgray;
+  .light-mode {
     background-color: white;
+    color: black;
+  }
+  .dark-mode{
+    background-color: black;
+    color: wheat;
+  }
 }
 
 .profile{
@@ -39,7 +53,7 @@ container.is-mobile-layout .menu-item {
 
 .menu-item{
     height: 100%;
-;
+
 }
 .menu-item:hover{
     border-bottom-style: solid;

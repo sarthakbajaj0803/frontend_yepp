@@ -22,11 +22,11 @@
 .widget-manager {
   display: flex;
   flex-flow: row wrap ;
-  width: 100%;
+  width: 98%;
   justify-content: space-evenly;
   align-items: stretch;
-  margin-right: 20px;
   margin-top: 2vh;
+  margin-inline: 20px;
 }
 
 app-feature-insight-card{
@@ -35,7 +35,6 @@ app-feature-insight-card{
 
 app-feature-debit-card{
   flex-grow: 1;
-  margin-right:20px;
 }
 
 app-feature-recent-transactions{

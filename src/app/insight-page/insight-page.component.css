@@ -1,0 +1,16 @@
+.insightpage{
+  display: flex;
+  flex-flow: column;
+  height:100vh;
+
+}
+.page{
+  margin-top:8vh;
+  width: 97%;
+  display: flex;
+  flex-flow: column;
+  gap: 2vh;
+  margin-inline: 20px;
+}
+
+
